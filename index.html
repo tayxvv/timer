@@ -5,20 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./js/script.js" defer></script>
 </head>
 <body>
-    <div class="main-app">
-        <div class="circle">
-            <div class="elements">
-                <h1 id="watch-time">00:00</h1>
-                <div class="botao">
-                    <button class="pause" onclick="pause()">Pausar</button>
-                    <button class="stop" onclick="stop()">Parar</button>
+    <div class="mainApp">
+        <div class="elements">
+            <div class="circle">
+                <div class="elementsOfCircle">
+                    <h1 id="watch-time">00:00</h1>
+                    <div class="elementsBottom">
+                        <img src="./assets/img/notificacao.png" alt=""><h3>00:00</h3>
+                    </div>
                 </div>
+            </div>
+            <div class="botaoOfTimer">
+                <button class="pause" onclick="pause()">Pausar</button>
+                <button class="stop" onclick="stop()">Parar</button>
+            </div>
+            <div class="ElementoAbaixoDoCírculo">
+                <button><h4 id="WTE">When Timer Ends</h4>
+                <h4 id="Radar">Radar ></h4></button>
             </div>
         </div>
     </div>
+    <footer>
+        <div class="icon">
+            <div class="mundo">
+                <img id="mundo" src="./assets/img/no-mundo-todo.png" alt="">
+                <h4>World Clock</h4>
+            </div>
+            <div class="despertador">
+                <img id="despertador" src="./assets/img/despertador.png" alt="">
+                <h4>Alarm</h4>
+            </div>
+            <div class="relogio">
+                <img id="relogio" src="./assets/img/relogio(1).png" alt="">
+                <h4>Stopwatch</h4>
+            </div>
+            <div class="cronometro">
+                <img id="cronometro" src="./assets/img/cronometro.png" alt="">
+                <h4>Timer</h4>
+            </div>
+        </div>
+    </footer>
+</div>
 </body>
 </html>
