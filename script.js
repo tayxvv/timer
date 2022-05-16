@@ -1,7 +1,8 @@
-let timeSeconds = 140 //declarando a variável
+const minutes = 5 //declarando a variável
+let countDownSeconds = minutes * 60
 
 function pause(){ //função para pausar
-    clearInterval(countDown) //quando apertarmos o botão "pausar"   função que funciona a cada segundo
+    clearInterval(countDown) //quando apertarmos o botão "pausar"   função que funciona a cada segundo para de funcionar
 }
 function stop(){
     clearInterval(countDown) //a mesma função acima, porém com o diferencial abaixo
@@ -10,9 +11,9 @@ function stop(){
 }
 
 const countDown = setInterval (()=>{ //a cada segundo esta função toda será chamada
-    timeSeconds--; //diminuindo os segundos
-    changeTime(timeSeconds); //a função changeTime será aplicada nos timeSeconds a cada intervalo, onde sempre será diminuído um segundo por vez
-    if(timeSeconds <= 0 || timeSeconds < 1){ //momento onde o intrevalo será interrompido, senão a contagem ultrapassaria o 0, e contar infinitos números negativos
+    countDownSeconds--; //diminuindo os segundos
+    changeTime(countDownSeconds); //a função changeTime será aplicada nos timeSeconds a cada intervalo, onde sempre será diminuído um segundo por vez
+    if(countDownSeconds <= 0 || countDownSeconds < 1){ //momento onde o intrevalo será interrompido, senão a contagem ultrapassaria o 0, e contar infinitos números negativos
         clearInterval(countDown);
     }
 
