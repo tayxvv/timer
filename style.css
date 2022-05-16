@@ -8,8 +8,8 @@
 }
 
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     outline: none;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -20,49 +20,61 @@ body{
     background-color: black;
 }
 
-.main-app{
+.mainApp{
     box-sizing: border-box;
-    display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
 }
+
+.elements{
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-bottom: 5%;
+}
+h3{
+    color: var(--gray)
+}
+
+
+
 .circle{
     display: flex;
-    width: 70vw;
-    height: 70vh;
+    width: 50vw;
+    height: 50vh;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width:350px;
-    height: 350px;
+    width:250px;
+    height: 250px;
     border-radius: 50%;
     border: 4px solid var(--orange);
     display: flex;
 
+}
+
+.elementsBottom{
+    box-sizing: border-box;
+    align-items:center;
+    justify-content: center;
+    display: flex;
+}
+
+h3{
+    font-weight: 900;
 }
 #watch-time{
     font-size: 70px;
     color:aliceblue;
 }
 
-.elementos{
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-}
-
-.botao{
-    display: flex;
-    box-sizing: border-box;
-    display: inline;
-    width: 100%;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-button{
+.pause{
     display: inline;
     width: 200px;
     height: 200px;
@@ -74,4 +86,131 @@ button{
     border-color:#757575;
     color: white;
     font-weight: 900;
+    margin-bottom: 40px;
+    margin-right: 70px;
+}
+
+.stop{
+    display: inline;
+    width: 200px;
+    height: 200px;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: #1c1c1e;
+    border-color:#757575;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+
+.ElementoAbaixoDoCírculo{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ElementoAbaixoDoCírculo > button{
+    box-sizing: border-box;
+    display: flex;
+    width: 300px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1c1e;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+}
+
+#WTE{
+    margin-right: 120px;
+}
+button{
+    cursor:pointer;
+}
+img{
+    cursor: pointer;
+}
+[disabled]{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+footer{
+    box-sizing:border-box;
+    width: 100vw;
+    height: 10vh;
+}
+
+.icon{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 10vh;
+    color: white;
+    font-size: 15px;;
+}
+img{
+    width: 25px;
+    height: 25px;
+    display: flex;
+
+}
+
+h4{
+    display: flex;
+}
+
+.mundo{
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.despertador{
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.relogio{
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.cronometro{
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left:20px;
+}
+
+#mundo{
+    margin-left: 30px;
+}
+
+#despertador{
+    margin-left:8px;
+}
+
+#relogio{
+    margin-left: 25px;
+}
+
+#cronometro{
+    margin-left: 6px;
 }
